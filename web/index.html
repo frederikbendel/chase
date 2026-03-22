@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chase – Wildcard Route Optimizer</title>
+
+    <!-- Leaflet -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV/XN/WuvQ="
+      crossorigin=""
+    ></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ===== Sidebar ===== -->
+    <aside id="sidebar">
+      <header>
+        <h1>🚵 Chase</h1>
+        <p class="subtitle">Wildcard Route Optimizer</p>
+      </header>
+
+      <section class="controls">
+        <label for="input-lat">Start Latitude</label>
+        <input id="input-lat" type="number" step="0.0001" placeholder="e.g. 51.5" />
+
+        <label for="input-lon">Start Longitude</label>
+        <input id="input-lon" type="number" step="0.0001" placeholder="e.g. 7.0" />
+
+        <label for="input-radius">Radius (km)</label>
+        <input id="input-radius" type="number" min="10" max="400" value="80" />
+
+        <button id="btn-load" class="primary-btn">Load Routes</button>
+      </section>
+
+      <section id="route-list-section" hidden>
+        <h2>Top Routes</h2>
+        <ul id="route-list"></ul>
+      </section>
+    </aside>
+
+    <!-- ===== Map ===== -->
+    <main id="map-container">
+      <div id="map"></div>
+
+      <!-- Elevation profile panel -->
+      <div id="elevation-panel" hidden>
+        <div id="elevation-header">
+          <span id="elevation-title">Elevation Profile</span>
+          <div class="elevation-actions">
+            <button id="btn-gpx" class="icon-btn" title="Download GPX">⬇ GPX</button>
+            <button id="btn-close-elevation" class="icon-btn" title="Close">✕</button>
+          </div>
+        </div>
+        <canvas id="elevation-chart"></canvas>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+# OSM data downloads (large binary files)
+docker/data/*.pbf
+docker/data/*.osm
+docker/data/*.pbf.md5
+
+# Pre-built ORS routing graphs
+docker/graphs/
+
+# SRTM elevation cache (re-downloadable)
+elevation_cache/
+
+# Generated GeoTIFF (re-buildable)
+build/elevation.tif
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Editor / OS
+.DS_Store
+.vscode/
+*.swp
