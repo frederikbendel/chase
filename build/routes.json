@@ -1,0 +1,39 @@
+{
+  "centre": { "lat": 51.5167, "lon": 7.4667 },
+  "radius_km": 80,
+  "routes": [
+    {
+      "rank": 1,
+      "id": 1,
+      "peak_lat": 51.1985,
+      "peak_lon": 8.4961,
+      "peak_elevation_m": 841.9,
+      "peak_prominence_m": 180.3,
+      "distance_km": 148.4,
+      "total_ascent_m": 2340,
+      "fiets_score": 3693.0
+    },
+    {
+      "rank": 2,
+      "id": 2,
+      "peak_lat": 51.7742,
+      "peak_lon": 8.0194,
+      "peak_elevation_m": 468.2,
+      "peak_prominence_m": 120.1,
+      "distance_km": 92.6,
+      "total_ascent_m": 1450,
+      "fiets_score": 2275.4
+    },
+    {
+      "rank": 3,
+      "id": 3,
+      "peak_lat": 51.3897,
+      "peak_lon": 7.8034,
+      "peak_elevation_m": 663.4,
+      "peak_prominence_m": 95.7,
+      "distance_km": 110.2,
+      "total_ascent_m": 1780,
+      "fiets_score": 2875.8
+    }
+  ]
+}

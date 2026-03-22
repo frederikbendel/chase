@@ -1,0 +1,13 @@
+ors:
+  engine:
+    source_file: /home/ors/files/nordrhein-westfalen-latest.osm.pbf
+    graphs_root_path: /home/ors/graphs
+    elevation:
+      provider: multi
+    profiles:
+      cycling-road:
+        enabled: true
+        profile: cycling-road
+      cycling-mountain:
+        enabled: true
+        profile: cycling-mountain
